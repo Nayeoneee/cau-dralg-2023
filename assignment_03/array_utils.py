@@ -3,7 +3,13 @@ import os.path as osp
 
 # 문제(1)
 def get_max(arr):
-    # 코드 작성...
+    if len(arr) == 0:
+        return None
+    max_val = arr[0]
+    for i in range(1, len(arr)):
+        if arr[i] > max_val:
+            max_val = arr[i]
+    return max_val
     return 0
 
 
