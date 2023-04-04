@@ -5,7 +5,8 @@
 
 "ID": "20001234"
 "FILES":
-    - "/**your-path-to-root**/cau-dralg-2023/assignment_03/array_utils.py" 
+    - "path-to-your-course/cau_oop_2022/assignment_03/mathlib.cpp"
+    - "path-to-your-course/cau_oop_2022/assignment_03/mathlib.h"
 "PROBLEMS": 
     - "PROBLEM_01A"
     - "PROBLEM_01B"
