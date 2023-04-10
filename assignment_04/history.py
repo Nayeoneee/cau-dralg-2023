@@ -3,7 +3,8 @@
 
 class History(object):
     def __init__(self):
-        pass
+        self._stack_undo = []
+        self._stack_redo = []
     
     def __str__(self):
         str_undo_stack = '[]'
@@ -18,16 +19,27 @@ class History(object):
 
     @property
     def current_state(self):
-        pass
+        if not self.is_empty():
+            return self._stack_undo[-1]
+        else:
+            print("None")
+            exit()
     
     def append(self, state):
-        pass
+        self._stack_undo.append(state)
+        self._stack_redo.clear()
     
     def undo(self):
-        pass
+        if not self.is_empty():
+            state = self._stack_undo.pop()
+            self._stack_redo.append(state)
     
     def redo(self):
-        pass       
+        if not self._stack_redo:
+            return
+        state = self._stack_redo.pop()
+        self._stack_undo.append(state)       
     
     def clear(self):
-        pass
+        self._stack_undo.clear()
+        self._stack_redo.clear()
