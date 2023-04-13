@@ -3,9 +3,9 @@
 "COURSE": "CAU_DRALG_2023"
 "ASSIGNMENT": "ASSIGNMENT_05"
 
-"ID": "20001234"
+"ID": "20210162"
 "FILES":
-    - "/**your-path-to-root**/cau-dralg-2023/assignment_05/singlylinkedlist.py" 
+    - "C:/Users/82106/cau-dralg-2023/assignment_05/singlylinkedlist.py" 
 "PROBLEMS": 
     - "PROBLEM_01"
     - "PROBLEM_02"
